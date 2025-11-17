@@ -39,8 +39,7 @@ export default function App() {
   }
   }, [movies])
   
-   const handleSearch = (formData: FormData) => {
-    const query = formData.get('query') as string;
+   const handleSearch = (query: string) => {
     setQuery(query);
     setPage(1);
   };
